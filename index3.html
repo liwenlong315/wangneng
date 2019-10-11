@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <meta content="telephone=no" name="format-detection">
-  <title>万能副卡</title>
+  <title>携转入网</title>
   <link rel="stylesheet" type="text/css" href="mui/css/mui.min.css" />
   <link rel="stylesheet" type="text/css" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
@@ -34,7 +34,7 @@
       <div class="child child-border">
         <label>办理号码</label><input class="ipt " type="text" name="" id="input1" value="" placeholder="请输入办理号码" />
       </div>
-      <div class="child child-border">
+      <div class="child">
         <label>验证码</label><input class="ipt" type="text" name="" id="" value="" placeholder="请输入验证码" />
         <span id="codePass" class="codepass">获取验证码</span>
       </div>
@@ -162,13 +162,7 @@
       }
     })
 
-    // 同步显示
-    // $(document).ready(function () {
-    //   $("#input1").keyup(function () {
-    //     $this = $(this);
-    //     $("#input2").val($this.val());
-    //   })
-    // })
+
 
     //点击清除按钮时，将input的值清空
     $("#btn_cancel").click(function () {
@@ -176,14 +170,13 @@
 
     });
 
-    //当input获取焦点时，将你分配的值赋给它
-    $("#input2").focus(function () {
-      if ($(this).val() == "") {
-        // $(this).val('2222');
+    //当input失去焦点时，将你分配的值赋给它
+    $("#input1").blur(function () {
         val = $("#input1")[0].value;
         $("#input2")[0].value = $("#input1")[0].value;
-      }
-    });
+      
+      });
+
     // 这一块是临时模拟 真正用的时候删除就ok end
     $('.other').click(function () {
       location.href = 'https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKJHY';
