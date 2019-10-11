@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta content="telephone=no" name="format-detection">
+  <title>万能副卡</title>
+  <link rel="stylesheet" type="text/css" href="mui/css/mui.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+  <link rel="stylesheet" type="text/css" href="css/index3.css" />
+  <link rel="stylesheet" type="text/css" href="mui/css/mui.picker.min.css" />
+</head>
+
+<body>
+
+
+  <div class="container">
+    <!-- 流程图位置 -->
+    <div class="process-wrap">
+      <div class="process-img"></div>
+    </div>
+
+    <!-- 携转入网 -->
+    <h3 class="title p30">携转入网</h3>
+    <div class="public-con bgfff  infor p30">
+      <div class="child child-border">
+        <label style="letter-spacing: -0.8rem">姓名</label><input class="ipt" type="text" name="" id="" value=""
+          placeholder="请输入身份证姓名" />
+      </div>
+      <div class="child child-border">
+        <label>身份证号</label><input class="ipt " type="text" name="" id="" value="" placeholder="请输入身份证号" />
+      </div>
+      <div class="child child-border">
+        <label>办理号码</label><input class="ipt " type="text" name="" id="input1" value="" placeholder="请输入办理号码" />
+      </div>
+      <div class="child child-border">
+        <label style="letter-spacing: -0.5rem">验证码</label><input class="ipts" type=" text" name="" id="" value=""
+          placeholder="请输入验证码" />
+        <div class="codeBtn">
+          <div class="txt01">获取验证码</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 上门地址 -->
+    <h3 class="title p30">上门地址</h3>
+    <div class="public-con bgfff receive p30">
+      <div class="child child-border">
+        <label>联系电话</label>
+        <input class="ipt" type="text" name="" id="input2" value="" placeholder="前端获取电话" />
+        <a id="btn_cancel"><img src="./img/cha.png" alt=""></a>
+      </div>
+      <div class="child child-border">
+        <label style="width: 1.4rem;">所在地区</label>
+        <!-- <input id="ipt2" class="ipt ipt-border" type="text" name="" value="" placeholder="请选择市/区/镇" /> -->
+        <div id="ipt2" class="ipt ipt2 ipt-border" type="text">请选择区域</div>
+        <i class="iconfont icon-dayu"></i>
+      </div>
+      <div class="child">
+        <label>详细地址</label>
+        <input class="ipt " type="text" placeholder="街道/镇＋村/小区/写字楼＋门牌号" />
+      </div>
+    </div>
+    <!-- 套餐方案 -->
+    <h3 class="title p30">套餐方案</h3>
+    <div class="public-con bgfff  ">
+      <div class="plan-wrap"></div>
+    </div>
+    <!-- 提交信息 -->
+    <div class="btn">
+      <div class="fixed">提交信息</div>
+    </div>
+    <!-- 温馨提示 -->
+    <h3 class="title p30">温馨提示</h3>
+    <div class="public-con bgfff tips p30">
+      <div class="con1">
+        <p>公安部刑侦局提示：请勿将已登记您本人身份证信息的号卡转卖、租借他人使用，请及时挂失、注销已丢失号卡，保护个人信息安全。涉嫌诈骗等违法犯罪行为的号码，实名登记机主需承担法律责任。
+          为保护信息安全，对集中收货地址/签收人/联系电话/身份证号等异常订单，我司将进行审核，如有问题将取消订单，不予发货。</p>
+        <p>1、主副卡绑定方式：<br>
+          绑定：万能副卡激活后，主卡可发送短信“BDFK万能副卡号码”到10086进行绑定。<br>
+          解绑定：绑定关系建立后，主卡可发送短信“QXFK万能副卡号码”到10086解除绑定；副卡可发送短信“JCBD主卡号码”到10086主动解除绑定关系。</p>
+      </div>
+      <div class="con2" style="display: none;">
+        <p>
+          2、资费说明：万能副卡月租费10元/月，套内包含100MB国内通用流量，国内主叫0.19元/分钟，被叫免费。万能副卡与主卡捆绑成功后，主卡为万能副卡代付所有费用，万能副卡可分享主卡套餐内的流量、话音、短彩信资源。<br>
+          #月租费优惠活动#：2019年12月31日前，新开通万能副卡，且与主卡成功绑定后，从激活当月起，可连续12个月，每月享受减免10元月租费的优惠，同时还可获赠1GB国内通用流量。</p>
+        <p>3、放心用套餐万能副卡分享费：如果主卡套餐包含“畅享10/
+          20/40套餐（流量模组需为60元/80元/100元/150元）、任我用流量包、188任我用套餐、集团任我用套餐、放心用流量包、全球通无限尊享权益方案（黄金权益、铂金权益、钻石权益）、尊享计划、2018年和4G校园套餐、集团任我用流量包”
+          等放心用套餐中的任意一款，办理万能副卡时，除月租费外，还将收取10元/月/副卡的放心用万能副卡分享费。<br>
+          #放心用副卡费优惠活动#：2019年12月31日前，以上放心用套餐用户新开通万能副卡，从万能副卡生效月起，可减免12个月主卡名下的放心用万能副卡分享费，12个月后，恢复万能副卡10元/月/副卡的放心用万能副卡分享费。
+        </p>
+        <p>4、用户购买万能副卡后，必须绑定主卡后方能实现代付及分享功能。主卡套餐必须是这些套餐或卡种：和4G
+          58元档及以上、4G自选套餐（流量模组30元及以上档位）、4G飞享套餐升级版58元档及以上或和4G公务套餐、和4G集团套餐、爱@U卡、校园套餐、流量王等，其它套餐无法与万能副卡建立绑定关系。一张主卡最多可以绑定两张万能副卡。具体套餐范围，详询10086。
+        </p>
+        <p>5、“超级流量王卡”号码绑定万能副卡后，副卡号码可分享“流量王套餐”中的“国内流量”及“连续24个月加赠的流量”。除此之外，其他赠送的流量资源无法共享。</p>
+        <p>6、针对仅选择语音模组的畅享套餐客户，不能作为和家庭分享、流量共享、万能副卡的主卡。</p>
+        <p>7、绑定万能副卡的主卡客户，如办理了“畅聊话音包”，副卡不能使用畅聊话音包中的国内主叫通话不限量。</p>
+        <p>
+          8、2017年9月1日起，动感地带飞享套餐升级版18元档无法绑定为万能副卡，仅允许“动感地带18元飞享套餐副卡版”作为万能副卡进行捆绑。“动感地带18元飞享套餐副卡版”仅限新增客户办理，存量客户无法转入。若万能副卡客户购买后未与主卡进行捆绑，则默认使用动感地带18元飞享套餐副卡版，无月费折扣。“动感地带18元飞享套餐副卡版”资费与“动感地带飞享套餐升级版18元档”资费相同。
+        </p>
+        <p>
+          9、主卡与副卡建立绑定关系后当月办理立即生效。生效后万能副卡月费折扣（即18元优惠至10元）立即生效，即日起主卡为万能副卡代付全部通信费用，万能副卡可分享主卡套餐内的流量、话音、短信及彩信资源。万能副卡的分享规则是优先使用自身资源，自身资源用尽后使用主卡资源。万能副卡的流量分享规则与“和家庭分享”一致，主卡客户办理的国际/港澳台话音套餐、国际/港澳台短彩信套餐、国际/港澳台流量资源不能分享。
+        </p>
+        <p>10、绑定期间，主卡套餐不允许变更为允许绑定的主套餐列表外的套餐，套餐范围详询北京移动10086。</p>
+        <p>
+          11、绑定关系建立后，主卡客户可通过营业厅、短信方式解除绑定关系，副卡也可通过短信方式解除绑定关系，绑定关系当月取消下月生效。绑定关系解除后，副卡不能再分享主卡套内的话音、流量、短彩信资源，主卡也不再为副卡代付通信费用。万能副卡默认执行动感地带飞享套餐18元档资费。万能副卡绑定前或取消绑定，操作当月产生的费用，由主卡代付。
+        </p>
+        <p>12、万能副卡号码申请销号，需先取消绑定关系。绑定关系当月取消月底失效。当月副卡可申销，由于代付关系月底失效，申销前副卡费用仍由主卡支付。</p>
+        <p>13、主副卡绑定后，主卡停机，则副卡同步停机；主卡开机，则副卡同步开机；主卡不开机时，副卡自行充值也无法开机。<br>
+          14、若主卡申请销号，则需先取消与万能副卡的绑定关系，绑定关系当月取消月底失效。取消绑定后当月即可销号，主卡仅代付申销前副卡的费用，申销后副卡的费用将由副卡支付。若主卡欠费销号，系统自动取消主卡与万能副卡之间的绑定关系，下月万能副卡默认执行动感地带飞享套餐18元档资费。主卡欠销前副卡已出费用在主卡代付范围内，主卡欠销后副卡出账费用由副卡自行支付。
+        </p>
+        <p>15、绑定期间，主卡可携号转品牌，主卡携号转品牌选择的套餐必须是允许绑定万能副卡的套餐。</p>
+        <p>16、万能副卡与主卡绑定后，不允许变更套餐。</p>
+        <p>17、绑定关系存续期间，主副卡均不允许转户、分户、合户；若用户有转户、分户、合户需求，则需先取消绑定关系。绑定关系当月取消下月失效。用户下月起可办理转户、分户、合户业务。</p>
+        <p>18、万能副卡客户如变更捆绑的主卡，需取消绑定关系，绑定关系当月取消下月失效。取消当月不能再次办理新的绑定关系。下月起可通过短信或者营业厅与新的主卡建立绑定关系。</p>
+        <p>19、万能副卡不允许办理和家庭分享、多终端流量共享、家庭计划、好友计划业务，也不能做以上业务的副卡。和家庭分享、4G多终端流量共享、家庭计划、好友计划的副卡客户，不能作为主卡绑定万能副卡。</p>
+        <p>
+          20、万能副卡套餐内包含的100MB全国流量可滚存，副卡优先使用自身资源，自身资源用尽后使用主卡资源。2018年1月1日-2019年12月31日期间，新绑定万能副卡用户每月加赠1GB全国通用流量，赠送流量不可结转，赠送12个月。
+        </p>
+        <p>21、万能副卡与主卡建立绑定关系后，通信费用由主卡代付。账户余额可以转移给主卡，万能副卡发送“DFYEZY”到10086，则可以将名下账户余额全额转移到主卡账户。</p>
+        <p>22、若主卡客户办理了低消类业务，则为万能副卡代付的金额不计入主卡的承诺消费中。</p>
+        <p>23、绑定万能副卡的主卡需通过发送短信代码“CXDFYE”到10086查询账户余额。</p>
+        <p>24、每月最后一天19点后，无法通过短信渠道办理绑定、解绑定、余额转移、成员查询等操作。</p>
+        <p>25、请在收到卡后15天内完成实名和绑定激活，超过最晚时间系统将自动回收号码。</p>
+        <p>26、更多规则请详询北京移动10086 。</p>
+
+      </div>
+      <div class="zhankai">展开</div>
+    </div>
+    <div style="display: none;" class="goback">返回<br>顶部</div>
+  </div>
+  <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+  <script src="mui/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="mui/js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    // 输入法聚焦
+    $('.ipt').on('focus', function () {
+      var bodyname = document.querySelector('.ipt');
+      bodyname.scrollTop = bodyname.scrollHeight;
+    })
+    //软键盘顶起来解决问题
+    $('.ipt').on('blur', function () {
+      window.scroll(0, 0)
+    })
+
+    $('.icon-guanbi').click(function () {
+      hideMask()
+    })
+    $('#ipt3').click(function () {
+      showMask()
+    })
+
+    $(".zhankai").on('click', function () {
+      if ($(".con2").is(":hidden")) {
+        $(".con2").show("linear");
+        $(this).text('收起')
+        //     $(this).find('.iconfont').removeClass('icon-zhankai').addClass('icon-shouqi')
+      } else {
+        $(".con2").hide("linear");
+        $(this).text('展开')
+        //     $(this).find(".iconfont").removeClass("icon-shouqi").addClass("icon-zhankai");
+      }
+    })
+
+    // 同步显示
+    // $(document).ready(function () {
+    //   $("#input1").keyup(function () {
+    //     $this = $(this);
+    //     $("#input2").val($this.val());
+    //   })
+    // })
+
+    //点击清除按钮时，将input的值清空
+    $("#btn_cancel").click(function () {
+      $("#input2").val("");
+
+    });
+
+    //当input获取焦点时，将你分配的值赋给它
+    $("#input2").focus(function () {
+      if ($(this).val() == "") {
+        // $(this).val('2222');
+        val = $("#input1")[0].value;
+        $("#input2")[0].value = $("#input1")[0].value;
+      }
+    });
+  </script>
+</body>
+
+</html>
