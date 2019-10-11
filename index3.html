@@ -26,8 +26,7 @@
     <h3 class="title p30">携转入网</h3>
     <div class="public-con bgfff  infor p30">
       <div class="child child-border">
-        <label style="letter-spacing: -0.8rem">姓名</label><input class="ipt" type="text" name="" id="" value=""
-          placeholder="请输入身份证姓名" />
+        <label>姓名</label><input class="ipt" type="text" name="" id="" value="" placeholder="请输入身份证姓名" />
       </div>
       <div class="child child-border">
         <label>身份证号</label><input class="ipt " type="text" name="" id="" value="" placeholder="请输入身份证号" />
@@ -36,11 +35,8 @@
         <label>办理号码</label><input class="ipt " type="text" name="" id="input1" value="" placeholder="请输入办理号码" />
       </div>
       <div class="child child-border">
-        <label style="letter-spacing: -0.5rem">验证码</label><input class="ipts" type=" text" name="" id="" value=""
-          placeholder="请输入验证码" />
-        <div class="codeBtn">
-          <div class="txt01">获取验证码</div>
-        </div>
+        <label>验证码</label><input class="ipt" type="text" name="" id="" value="" placeholder="请输入验证码" />
+        <span id="codePass" class="codepass">获取验证码</span>
       </div>
     </div>
 
@@ -188,6 +184,36 @@
         $("#input2")[0].value = $("#input1")[0].value;
       }
     });
+    // 这一块是临时模拟 真正用的时候删除就ok end
+    $('.other').click(function () {
+      location.href = 'https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKJHY';
+    })
+
+    function bindEvents(id) {
+      $("#" + id).on('click', function () {
+        var code = $("#" + id);
+        // code.attr("class","noClick");
+        code.unbind('click');
+        var time = 60;
+        $(".codepass").css({
+          "background": "#9b9b9b",
+          "color": "#fff"
+        });
+        var set = setInterval(function () {
+          code.text(--time + "S重新获取");
+        }, 1000);
+        setTimeout(function () {
+          $("#codePass").bind('click', bindEvents('codePass'));
+          code.text("重新获取验证码");
+          $(".codepass").css({
+            "background": "#55b0fe",
+            "color": "#fff"
+          });
+          clearInterval(set);
+        }, 60000);
+      });
+    }
+    bindEvents('codePass');
   </script>
 </body>
 
